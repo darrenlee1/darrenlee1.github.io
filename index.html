@@ -1,8 +1,9 @@
 <html>
 	<head>
 		<title>Darren Lee</title>
+		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		<!--favicon-->
+		<!-- favicon -->
 		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -21,9 +22,11 @@
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
 
+		<!-- bootstrap -->
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
 
+        <!-- more css -->
 		<style>
 			body {
 			    font-family: 'Open Sans', sans-serif;
@@ -45,36 +48,128 @@
 			    -o-transition: background-color 500ms;
 			    transition: background-color 500ms;
 			}
-
+			.proj-title{
+				font-weight: bold;
+			}
+			.proj-description{
+				font-size: 95%;
+			}
 		</style>
 	</head>
+
 	<body>
 		<div style="width: 1305px; margin: 0 auto; ">
 
-				<!-- Title -->
+		<!-- Title -->
         <div class="col-xs-12" style="text-align: center; margin-top: 1%;">
+        	<!-- Name -->
             <h2><a href="#" style="color: #000000;"> Darren Lee </a></h2>
+            <!-- blurb -->
             <h4 style="color: #999999"> still figuring things out </h4>
             <br>
         </div>
-                <!-- Jumbotron -->
+
+        <!-- Intro Jumbotron -->
         <div class="col-xs-12" style="height: 190px;">
+        	<!-- Profile Picture -->
             <img src="http://i.imgur.com/aUXARwo.jpg" class="col-xs-2" style="height: 100%;">
+            <!-- Introduction Text -->
             <div class="col-xs-8" style="background-color: #EEEEEE; padding: 2%; height: 100%;">
                 <h4 style="text-align: justify; color: #000000; font-size: 150%; line-height: 140%;">
                     <strong>Hi!</strong>
-                     My name is Darren and I am currently studying <a href="https://eecs.berkeley.edu/" target="_blank">Electrical Engineering and Computer Science</a> at <a href="http://www.berkeley.edu/" target="_blank">UC Berkeley</a>. This website is currently a work in progress! I'll try to update regularly with projects I'm currently working on.
+                     My name is Darren and I am currently studying 
+                     <a href="https://eecs.berkeley.edu/" target="_blank">Electrical Engineering and Computer Science</a>
+                      at <a href="http://www.berkeley.edu/" target="_blank">UC Berkeley</a>. 
+                     <br/><br/>This website is currently a work in progress! 
+                     <br/>I'll try to update regularly with projects I'm currently working on.
                 </h4>
             </div>
+            <!-- Email, Links, Resume -->
             <div class="col-xs-2" style="padding: 1.5%;">
             	<p style="margin-top: 0px;"> <strong> Email:</strong> <a href="mailto:darrenlee@berkeley.edu" style="color: #999999" target="_blank">darrenlee@berkeley.edu</a></p>
                 <p style="margin-top: 0px;"> <strong> Github:</strong> <a href="https://github.com/darrenlee1" style="color: #999999" target="_blank">/darrenlee1</a></p>
                 <p style="margin-top: 0px;"> <strong> Linkedin:</strong> <a href="https://www.linkedin.com/in/darrenlee2" style="color: #999999" target="_blank">/in/darrenlee2</a></p>
-                <p style="margin-top: 0px;"> <strong> Resume:</strong><br/> <a href="images/resume.pdf" style="color: #999999" target="_blank"> last updated 2017-01-11</a></p>
+                <p style="margin-top: 0px;"> <strong> Resume:</strong><br/> <a href="images/resume.pdf" style="color: #999999" target="_blank"> last updated 2017-01-12</a></p>
             </div>
         </div>
 
-        <hr class="col-xs-12"></hr>
+        <hr class="col-xs-12"></hr> <!-- horizontal line -->
+
+        <!-- Projects -->
+        <div class="col-xs-12" style="background-color: #FFFFFF; padding: 1%;">
+            <h3 style="text-align: center; ">
+                Projects
+            </h3>
+        </div>
+        <!-- main projects div -->
+        <div class="col-xs-12">
+
+        	<!-- Easy Urban Dictionary Lookup -->
+            <div class="proj col-xs-6" style="padding: 1%; ">
+            	<!-- Image -->
+            	<div class="col-xs-6">
+                    <img src="http://i.imgur.com/eIExZo7.jpg" style="width:100%;"></img>
+                </div>
+                <!-- Text -->
+                <div class="col-xs-6">
+                    <h4 class="proj-title">
+                    	Urban Dictionary Chrome Extension 
+                    </h4>
+                    <h5 class="proj-subtitle">
+                    	JavaScript/jQuery, HTML/CSS | Jan 2017
+                    </h5>
+                    <p class="proj-description">
+                    	Built and released an elegant chrome extension that allows users to easily view Urban Dictionary definitions as they browse the web. Used JavaScript and jQuery for popup and context-menu functionality, and YQL for web scraping.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Scheme Interpreter -->
+            <div class="proj col-xs-6" style="padding: 1%; ">
+            	<!-- Image -->
+            	<div class="col-xs-5">
+                    <img src="http://i.imgur.com/DMa47Mb.png?1" style="width:100%;"></img>
+                </div>
+                <!-- Text -->
+                <div class="col-xs-7">
+                    <h4 class="proj-title">
+                    	Scheme Interpreter 
+                    </h4>
+                    <h5 class="proj-subtitle">
+                    	Python, Scheme | Nov 2016
+                    </h5>
+                    <p class="proj-description">
+                    	Created a basic Scheme interpreter in Python that uses "read-eval-print-loop" to parse and evaluate Scheme expressions; the interpreter uses tail recursion to optimize for recursive procedures.
+                    	<br/>Used Scheme to create randomly generated recursive art that won 2nd place (out of 32 entries) in CS61A's Scheme Recursive Art Contest.
+                	</p>
+                </div>
+            </div>
+
+            <!-- Scheme Interpreter -->
+            <div class="proj col-xs-6" style="padding: 1%; ">
+            	<!-- Image -->
+            	<div class="col-xs-5">
+                    <img src="http://i.imgur.com/DMa47Mb.png?1" style="width:100%;"></img>
+                </div>
+                <!-- Text -->
+                <div class="col-xs-7">
+                    <h4 class="proj-title">
+                    	Scheme Interpreter 
+                    </h4>
+                    <h5 class="proj-subtitle">
+                    	Python, Scheme | Nov 2016
+                    </h5>
+                    <p class="proj-description">
+                    	Created a basic Scheme interpreter in Python that uses "read-eval-print-loop" to parse and evaluate Scheme expressions; the interpreter uses tail recursion to optimize for recursive procedures.
+                    	<br/>Used Scheme to create randomly generated recursive art that won 2nd place (out of 32 entries) in CS61A's Scheme Recursive Art Contest.
+                	</p>
+                </div>
+            </div>
+
+        </div> <!-- END main projects div -->
+
+        <hr class="col-xs-12"></hr> <!-- horizontal line -->
+
 
 		</div>
 	</body>
