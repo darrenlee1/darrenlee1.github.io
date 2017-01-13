@@ -3,24 +3,9 @@
 		<title>Darren Lee</title>
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 		<!-- favicon -->
-		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-		<link rel="manifest" href="favicon/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
+		<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
 
 		<!-- bootstrap -->
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -53,6 +38,13 @@
 			}
 			.proj-description{
 				font-size: 95%;
+			}
+			.hover-me:before {
+			    content: 'me.';
+			    display: inline-block;
+			}
+			.hover-me:hover:before {
+			    content: 'Darren!';
 			}
 		</style>
 	</head>
@@ -94,6 +86,7 @@
         <hr class="col-xs-12"></hr> <!-- horizontal line -->
 
         <!-- Projects -->
+        <!-- projects title -->
         <div class="col-xs-12" style="background-color: #FFFFFF; padding: 1%;">
             <h3 style="text-align: center; ">
                 Projects
@@ -119,7 +112,7 @@
                     	JavaScript/jQuery, HTML/CSS | Jan 2017
                     </h5>
                     <p class="proj-description">
-                    	Built and released an elegant chrome extension that allows users to easily view Urban Dictionary definitions as they browse the web. 
+                    	Built and released an elegant chrome extension that allows users to easily view <a href="http://www.urbandictionary.com/" target="_blank">Urban Dictionary</a> definitions as they browse the web. 
                     </p>
                 </div>
             </div>
@@ -139,7 +132,7 @@
                     	JavaScript/AngularJS | Dec 2016
                     </h5>
                     <p class="proj-description">
-                    	Built and integrated a timeline widget for BMC Innovation Studio using AngularJS as part of BMC Software's winter internship program. Presented our timeline product to BMC executives and received positive feedback.
+                    	Built and integrated a timeline widget for <a href="http://www.bmc.com/it-solutions/innovation-suite.html" target="_blank">BMC Innovation Studio</a> using AngularJS as part of <a href="http://www.bmc.com/" target="_blank">BMC Software</a>'s winter internship program. Presented our timeline product to BMC executives and received positive feedback.
                 	</p>
                 </div>
             </div>
@@ -159,12 +152,11 @@
                     	Python, Scheme | Nov 2016
                     </h5>
                     <p class="proj-description">
-                    	Created a basic Scheme interpreter in Python that uses "read-eval-print-loop" to parse and evaluate Scheme expressions.
+                    	Created a basic <a href="https://en.wikipedia.org/wiki/Scheme_(programming_language)" target="_blank">Scheme</a> interpreter in Python that uses "read-eval-print-loop" to parse and evaluate Scheme expressions.
                     	<br/>Used Scheme to create randomly generated recursive art that won 2nd place (out of 32 entries) in CS61A's Scheme Recursive Art Contest.
                 	</p>
                 </div>
             </div>
-
 
             <!-- Admoneo: Location-Based Reminders -->
             <div class="proj col-xs-6" style="padding: 1%; ">
@@ -183,7 +175,7 @@
                     	Java | Nov 2016
                     </h5>
                     <p class="proj-description">
-                    	Worked in a team of 5 to create a location-based reminder app for Android that uses Google Maps API to send a push notification whenever the user is near a location on his to-do list; created for CalHacks 3.0.
+                    	Worked in a team of 5 to create a location-based reminder app for Android that uses <a href="https://developers.google.com/maps/" target="_blank">Google Maps API</a> to send a push notification whenever the user is near a location on his to-do list; created for <a href="http://www.calhacks.io/" target="_blank">CalHacks 3.0</a>.
                 	</p>
                 </div>
             </div>
@@ -203,7 +195,7 @@
                     	Octave | Jul 2016
                     </h5>
                     <p class="proj-description">
-                    	Developed an algorithm to recognize handwritten digits using machine learning principles (neural networks, logistic regression) with Octave while self-studying Stanford’s machine learning online course.
+                    	Developed an algorithm to recognize handwritten digits using machine learning principles (neural networks, logistic regression) with Octave while self-studying <a href="https://www.coursera.org/learn/machine-learning" target="_blank">Stanford’s machine learning online course</a>.
                 	</p>
                 </div>
             </div>
@@ -217,13 +209,14 @@
                 <!-- Text -->
                 <div class="col-xs-6">
                     <h4 class="proj-title">
+                    	<!-- http://dleemagic002.wixsite.com/colorbox -->
                     	Colorbox iPhone Game
                     </h4>
                     <h5 class="proj-subtitle">
                     	Swift/SpriteKit | Jul 2015
                     </h5>
                     <p class="proj-description">
-                    	Designed and created an original iPhone game called ColorBox from scratch using Swift and SpriteKit. (Ask for a demo!)
+                    	Designed and created an original iPhone game called ColorBox from scratch using Swift and <a href= "https://developer.apple.com/reference/spritekit" target="_blank">SpriteKit</a>. (Ask for a demo!)
                 	</p>
                 </div>
             </div>
@@ -232,20 +225,42 @@
             <div class="proj col-xs-6" style="padding: 1%; ">
             	<!-- Image -->
             	<div class="col-xs-6">
-                    <img src="http://i.imgur.com/bOYv3w3.png" style="width:100%;"></img>
+                    <img src="http://i.imgur.com/KJhPwtO.png" style="width:100%;"></img>
                 </div>
                 <!-- Text -->
                 <div class="col-xs-6">
                     <h4 class="proj-title">
-                    	<a href="http://codepen.io/dleemagic002/full/ojXgqW" target="_blank">
+                    	<!-- <a href="projects/weather.html" target="_blank"> -->
                     		Weather Wizard
+                    	<!-- </a> -->
+                    </h4>
+                    <h5 class="proj-subtitle">
+                    	JavaScript/jQuery, HTML/CSS | Jul 2015
+                    </h5>
+                    <p class="proj-description">
+                    	Built an elegant webapp that fetches local weather data using the <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a> API. 
+                	</p>
+                </div>
+            </div>
+
+			<!-- Tomato Timer -->
+            <div class="proj col-xs-6" style="padding: 1%; ">
+            	<!-- Image -->
+            	<div class="col-xs-6">
+                    <img src="http://i.imgur.com/Oc8N5J1.png" style="width:100%;"></img>
+                </div>
+                <!-- Text -->
+                <div class="col-xs-6">
+                    <h4 class="proj-title">
+                    	<a href="projects/timer.html" target="_blank">
+                    		Tomato Timer
                     	</a>
                     </h4>
                     <h5 class="proj-subtitle">
-                    	JavaScript, HTML/CSS | Jul 2015
+                    	JavaScript/jQuery, HTML/CSS | Jul 2015
                     </h5>
                     <p class="proj-description">
-                    	Built an elegant webapp that fetches local weather data using the OpenWeatherMap API.
+                    	Built a simple tomato timer webapp that uses <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">the Pomodoro Technique</a> to increase productivity.
                 	</p>
                 </div>
             </div>
@@ -272,6 +287,29 @@
                 </div>
             </div>
 
+            <!-- Japanese Snow Monkeys -->
+            <div class="proj col-xs-6" style="padding: 1%; ">
+            	<!-- Image -->
+            	<div class="col-xs-6">
+                    <img src="http://i.imgur.com/vMipXh2.png" style="width:100%;"></img>
+                </div>
+                <!-- Text -->
+                <div class="col-xs-6">
+                    <h4 class="proj-title">
+                    	<a href="https://www.youtube.com/watch?v=pH8k51d99iI" target="_blank">
+                    		Japanese Snow Monkeys
+                    	</a>
+                    </h4>
+                    <h5 class="proj-subtitle">
+                    	a camera | Jun 2015
+                    </h5>
+                    <p class="proj-description">
+                    	We went to Japan in Jun 2015. There's a <a href="http://en.jigokudani-yaenkoen.co.jp/" target="_blank">Snow Monkey Park</a> where snow monkeys roam free! (sorry in advance for shaky filming)
+                    	<br/><strong>Bonus:</strong> <a href="http://i.imgur.com/FFTW8oX.jpg" target="_blank">me with a wallaby</a> in <a href="http://www.featherdale.com.au/" target="_blank">Australia</a> (Nov 2011).
+                	</p>
+                </div>
+            </div>
+
         </div> <!-- END main projects div -->
 
         <hr class="col-xs-12"></hr> <!-- horizontal line -->
@@ -280,7 +318,9 @@
         <!-- Footer -->
         <div class="col-xs-12" style="margin-top: 2%; margin-bottom: 2%; text-align: center;">
         	<h5>website last updated: 2017-01-13</h5>
-            <h5>Made by <a href="#" style="color: #000000;">me</a>.</h5>
+            <h5>Made by <a class="hover-me" href="#" style="color: #000000;"></a>
+            	<a href="https://github.com/darrenlee1/darrenlee1.github.io" target="_blank">Open source on Github</a>.
+            </h5>
         </div>
 
 		</div>
